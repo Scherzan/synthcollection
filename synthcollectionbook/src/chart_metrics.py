@@ -1,6 +1,3 @@
-from pyecharts import options as opts
-from pyecharts.charts import Tree
-
 q_metrics = [
     {
         "children": [
@@ -87,10 +84,5 @@ q_metrics = [
 ]
 
 
-c = (
-    Tree()
-    .add("", q_metrics, label_opts = opts.LabelOpts(font_size = 18, position = 'top', color='#1f449c'), 
-         initial_tree_depth=2, itemstyle_opts = opts.ItemStyleOpts(border_color0 = "000000")) #
-    .render_notebook()
-    )
+
 
