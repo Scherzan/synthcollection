@@ -53,6 +53,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
+    <script src="_static/echarts.min.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -168,6 +169,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 <li class="toctree-l1"><a class="reference internal" href="diff_privacy_sd_gan.html">Synthetische Daten mit KI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledgements.html">Acknowledgements</a></li>
 </ul>
 
     </div>
@@ -368,9 +370,18 @@ document.write(`
 <p>Insbesondere für die Generierung von Forschungsdaten sollte eine hohe Wiedergabetreue erreicht werden. Wie geht das?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
-<span class="kn">from</span> <span class="nn">src.chart_metrics</span> <span class="kn">import</span> <span class="n">c</span>
-<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;cool_text&quot;</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pyecharts</span> <span class="kn">import</span> <span class="n">options</span> <span class="k">as</span> <span class="n">opts</span>
+<span class="kn">from</span> <span class="nn">pyecharts.charts</span> <span class="kn">import</span> <span class="n">Tree</span>
+<span class="kn">from</span> <span class="nn">src.chart_metrics</span> <span class="kn">import</span> <span class="n">q_metrics</span>
+
+<span class="n">c</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">Tree</span><span class="p">()</span>
+    <span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">q_metrics</span><span class="p">,</span> <span class="n">label_opts</span> <span class="o">=</span> <span class="n">opts</span><span class="o">.</span><span class="n">LabelOpts</span><span class="p">(</span><span class="n">font_size</span> <span class="o">=</span> <span class="mi">18</span><span class="p">,</span> <span class="n">position</span> <span class="o">=</span> <span class="s1">&#39;top&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;#1f449c&#39;</span><span class="p">),</span> 
+         <span class="n">initial_tree_depth</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">itemstyle_opts</span> <span class="o">=</span> <span class="n">opts</span><span class="o">.</span><span class="n">ItemStyleOpts</span><span class="p">(</span><span class="n">border_color0</span> <span class="o">=</span> <span class="s2">&quot;000000&quot;</span><span class="p">))</span> <span class="c1">#</span>
+    <span class="c1">#.set_global_opts(title_opts=opts.TitleOpts(title=&quot;Tree&quot;))</span>
+<span class="p">)</span>
+
+<span class="n">c</span><span class="o">.</span><span class="n">render_notebook</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -384,13 +395,13 @@ document.write(`
     });
 </script>
 
-        <div id="0f7f19566e0949cd8f47f81567cefe74" style="width:900px; height:500px;"></div>
+        <div id="4c09b5c456de4b7888e02167f1a252e5" style="width:900px; height:500px;"></div>
 
 <script>
         require(['echarts'], function(echarts) {
-                var chart_0f7f19566e0949cd8f47f81567cefe74 = echarts.init(
-                    document.getElementById('0f7f19566e0949cd8f47f81567cefe74'), 'white', {renderer: 'canvas'});
-                var option_0f7f19566e0949cd8f47f81567cefe74 = {
+                var chart_4c09b5c456de4b7888e02167f1a252e5 = echarts.init(
+                    document.getElementById('4c09b5c456de4b7888e02167f1a252e5'), 'white', {renderer: 'canvas'});
+                var option_4c09b5c456de4b7888e02167f1a252e5 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -588,7 +599,7 @@ document.write(`
             "edgeForkPosition": "50%",
             "roam": false,
             "expandAndCollapse": true,
-            "initialTreeDepth": 2,
+            "initialTreeDepth": 0,
             "layout": "orthogonal",
             "orient": "LR",
             "label": {
@@ -638,278 +649,12 @@ document.write(`
         "order": "seriesAsc"
     }
 };
-                chart_0f7f19566e0949cd8f47f81567cefe74.setOption(option_0f7f19566e0949cd8f47f81567cefe74);
+                chart_4c09b5c456de4b7888e02167f1a252e5.setOption(option_4c09b5c456de4b7888e02167f1a252e5);
         });
     </script>
 </div></div>
 </div>
-<p><span class="output text_html">
-<script>
-    require.config({
-        paths: {
-            'echarts':'https://assets.pyecharts.org/assets/v5/echarts.min'
-        }
-    });
-</script>
-
-        <div id="0f7f19566e0949cd8f47f81567cefe74" style="width:900px; height:500px;"></div>
-
-<script>
-        require(['echarts'], function(echarts) {
-                var chart_0f7f19566e0949cd8f47f81567cefe74 = echarts.init(
-                    document.getElementById('0f7f19566e0949cd8f47f81567cefe74'), 'white', {renderer: 'canvas'});
-                var option_0f7f19566e0949cd8f47f81567cefe74 = {
-    "animation": true,
-    "animationThreshold": 2000,
-    "animationDuration": 1000,
-    "animationEasing": "cubicOut",
-    "animationDelay": 0,
-    "animationDurationUpdate": 300,
-    "animationEasingUpdate": "cubicOut",
-    "animationDelayUpdate": 0,
-    "aria": {
-        "enabled": false
-    },
-    "color": [
-        "#5470c6",
-        "#91cc75",
-        "#fac858",
-        "#ee6666",
-        "#73c0de",
-        "#3ba272",
-        "#fc8452",
-        "#9a60b4",
-        "#ea7ccc"
-    ],
-    "series": [
-        {
-            "type": "tree",
-            "data": [
-                {
-                    "children": [
-                        {
-                            "children": [
-                                {
-                                    "children": [
-                                        {
-                                            "name": "Statistical Moments \nand Tests"
-                                        },
-                                        {
-                                            "name": "Distance Calculations"
-                                        },
-                                        {
-                                            "name": "Visual Comparisons"
-                                        }
-                                    ],
-                                    "name": "Univariate"
-                                },
-                                {
-                                    "children": [
-                                        {
-                                            "name": "Pairwise Pearson \nCorrelation"
-                                        },
-                                        {
-                                            "name": "Contingency Table"
-                                        }
-                                    ],
-                                    "name": "Multivariate"
-                                },
-                                {
-                                    "children": [
-                                        {
-                                            "name": "PCA Plots Comparison"
-                                        },
-                                        {
-                                            "name": "Isomap Plots Comparison"
-                                        }
-                                    ],
-                                    "name": "Dimensional"
-                                },
-                                {
-                                    "children": [
-                                        {
-                                            "name": "Train classifier to label\nreal and synthetic records\nand analyse its performance"
-                                        }
-                                    ],
-                                    "name": "Data Labeling"
-                                }
-                            ],
-                            "name": "Resemblance Analysis"
-                        },
-                        {
-                            "children": [
-                                {
-                                    "children": [
-                                        {
-                                            "name": "Choose a prediction task within your data, \ntrain your prediction model on real data, \ntrain your prediction model on synthetic data, \ncompare prediction task performance on real test data \n"
-                                        }
-                                    ],
-                                    "name": "Downstream Task Evaluation"
-                                }
-                            ],
-                            "name": "Utility Evaluation"
-                        },
-                        {
-                            "children": [
-                                {
-                                    "children": [
-                                        {
-                                            "name": "Paired Euclidean Distance"
-                                        },
-                                        {
-                                            "name": "Wasserstein distance"
-                                        },
-                                        {
-                                            "name": "Jensen-Shannon divergence"
-                                        }
-                                    ],
-                                    "name": "Similarity Evaluation Analysis (SEA)"
-                                },
-                                {
-                                    "children": [
-                                        {
-                                            "name": "Membership Inference Attack"
-                                        },
-                                        {
-                                            "name": "Attribute Inference Attack"
-                                        }
-                                    ],
-                                    "name": "Re-Identification Risk Analysis (RIRA)"
-                                }
-                            ],
-                            "name": "Privacy Evaluation"
-                        },
-                        {
-                            "children": [
-                                {
-                                    "children": [
-                                        {
-                                            "name": "Basic Statistical Properties"
-                                        },
-                                        {
-                                            "name": "Correlation Matrices"
-                                        },
-                                        {
-                                            "name": "PCA"
-                                        },
-                                        {
-                                            "name": "Utility Evaluation (ML-Task)"
-                                        }
-                                    ],
-                                    "name": "Similarity Score \n(Brenninkmeijer & Hille)"
-                                },
-                                {
-                                    "children": [
-                                        {
-                                            "name": "Basic Statistical Properties"
-                                        },
-                                        {
-                                            "name": "Correlation Score"
-                                        },
-                                        {
-                                            "name": "Utility Evaluation (ML-Task)"
-                                        },
-                                        {
-                                            "name": "Propensity Mean Squared Error"
-                                        },
-                                        {
-                                            "name": "Support Coverage"
-                                        }
-                                    ],
-                                    "name": "TabSynDex \n(Chundawat et al.)"
-                                },
-                                {
-                                    "children": [
-                                        {
-                                            "name": "Resemblance Analysis (URA, MRA, DRA, DLA)"
-                                        },
-                                        {
-                                            "name": "Utility Evaluation (classification)"
-                                        },
-                                        {
-                                            "name": "Privacy Evaluation (SEA, RIRA)"
-                                        }
-                                    ],
-                                    "name": "Categorization of Quality \n(Hernandez et al.)"
-                                },
-                                {
-                                    "children": [
-                                        {
-                                            "name": "Univariate Statistical \nTests"
-                                        },
-                                        {
-                                            "name": "Correlation and \nContingency Measures"
-                                        }
-                                    ],
-                                    "name": "Quality Score \n(Synthetic Data Vault)"
-                                }
-                            ],
-                            "name": "One Overall Metric"
-                        }
-                    ],
-                    "name": "Evaluation Metrics"
-                }
-            ],
-            "symbol": "emptyCircle",
-            "symbolSize": 7,
-            "edgeShape": "curve",
-            "edgeForkPosition": "50%",
-            "roam": false,
-            "expandAndCollapse": true,
-            "initialTreeDepth": 2,
-            "layout": "orthogonal",
-            "orient": "LR",
-            "label": {
-                "show": true,
-                "position": "top",
-                "color": "#1f449c",
-                "margin": 8,
-                "fontSize": 18
-            },
-            "leaves": {
-                "label": {
-                    "show": true,
-                    "margin": 8
-                }
-            },
-            "itemStyle": {
-                "borderColor0": "000000"
-            }
-        }
-    ],
-    "legend": [
-        {
-            "data": [],
-            "selected": {}
-        }
-    ],
-    "tooltip": {
-        "show": true,
-        "trigger": "item",
-        "triggerOn": "mousemove|click",
-        "axisPointer": {
-            "type": "line"
-        },
-        "showContent": true,
-        "alwaysShowContent": false,
-        "showDelay": 0,
-        "hideDelay": 100,
-        "enterable": false,
-        "confine": false,
-        "appendToBody": false,
-        "transitionDuration": 0.4,
-        "textStyle": {
-            "fontSize": 14
-        },
-        "borderWidth": 0,
-        "padding": 5,
-        "order": "seriesAsc"
-    }
-};
-                chart_0f7f19566e0949cd8f47f81567cefe74.setOption(option_0f7f19566e0949cd8f47f81567cefe74);
-        });
-    </script>
-</span></p>
+<p><a class="reference download internal" download="" href="_downloads/62a5c971334035b19459e81e2b66ab55/render.html"><span class="xref download myst">Codecademy Docs</span></a></p>
 </section>
 
     <script type="text/x-thebe-config">
