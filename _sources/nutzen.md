@@ -1,4 +1,4 @@
-# Praxisbeispiele
+# Praxisbeispiele in der Verwaltung
 
 Einsatz von synthetischen Daten in der Praxis:
 
