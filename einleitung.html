@@ -66,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'einleitung';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Besonderheiten" href="besonderheiten.html" />
+    <link rel="next" title="Qualitätsbewertung" href="qualit%C3%A4tsbewertung.html" />
     <link rel="prev" title="🧪 Synthetische Daten (in der Verwaltung 🗃️)" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -160,8 +160,6 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Synthetische Daten</a></li>
-<li class="toctree-l1"><a class="reference internal" href="besonderheiten.html">Besonderheiten</a></li>
-<li class="toctree-l1"><a class="reference internal" href="nutzen.html">Praxisbeispiele in der Verwaltung</a></li>
 <li class="toctree-l1"><a class="reference internal" href="qualit%C3%A4tsbewertung.html">Qualitätsbewertung</a></li>
 <li class="toctree-l1"><a class="reference internal" href="datenschutz.html">Datenschutz</a></li>
 <li class="toctree-l1"><a class="reference internal" href="datenauswertung.html">Datenauswertung</a></li>
@@ -365,6 +363,17 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ein-datenbeispiel">Ein Datenbeispiel</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#besonderheiten">Besonderheiten</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#welche-arten-von-synthetischen-daten-gibt-es">Welche Arten von synthetischen Daten gibt es?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#was-macht-den-einsatz-von-synthetischen-daten-spannend">Was macht den Einsatz von synthetischen Daten spannend?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#praxisbeispiele-in-der-verwaltung">Praxisbeispiele in der Verwaltung</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#struktur-und-aufbau-von-datensatzen-veranschaulichen">Struktur und Aufbau von Datensätzen veranschaulichen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#echte-datengrundlagen-aufwerten">Echte Datengrundlagen aufwerten</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#schutzenswerte-datengrundlagen-teilen">Schützenswerte Datengrundlagen teilen</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -766,6 +775,165 @@ Spoiler<div class="sd-summary-down docutils">
 <p class="sd-card-text">Die generierten numerischen Werte zum Beispiel bei ‘Age’ haben mehr Nachkommastellen als die Werte im originalen Datensatz.</p>
 </div>
 </details></section>
+<section id="besonderheiten">
+<h2>Besonderheiten<a class="headerlink" href="#besonderheiten" title="Permalink to this heading">#</a></h2>
+<section id="welche-arten-von-synthetischen-daten-gibt-es">
+<h3>Welche Arten von synthetischen Daten gibt es?<a class="headerlink" href="#welche-arten-von-synthetischen-daten-gibt-es" title="Permalink to this heading">#</a></h3>
+<figure class="boxed align-default" id="id3">
+<a class="reference internal image-reference" href="_images/Arten_SD.png"><img alt="_images/Arten_SD.png" src="_images/Arten_SD.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Synthetische Daten unterscheiden sich nach dem Grad der Wiedergabetreue.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="was-macht-den-einsatz-von-synthetischen-daten-spannend">
+<h3>Was macht den Einsatz von synthetischen Daten spannend?<a class="headerlink" href="#was-macht-den-einsatz-von-synthetischen-daten-spannend" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Synthetische Daten sehen aus und fühlen sich an wie echte Daten.</p></li>
+</ol>
+<figure class="boxed align-default">
+<a class="reference internal image-reference" href="_images/bilder_anon.png"><img alt="_images/bilder_anon.png" src="_images/bilder_anon.png" style="width: 100%;" /></a>
+</figure>
+<p><br/><br/>
+2. Synthetische Daten enthalten keine personenbezogenen Informationen, da sie aus zufälligen Zahlen generiert werden.</p>
+<figure class="boxed align-default" id="id4">
+<a class="reference internal image-reference" href="_images/ctgan_architecure.png"><img alt="_images/ctgan_architecure.png" src="_images/ctgan_architecure.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Beispiel für die Architektur eines Neuronalen Netzes zur Generierung von synthetischen Daten aus Zufallszahlen. Quelle: <a class="reference external" href="https://datacebo.com/blog/interpreting-ctgan-progress/">https://datacebo.com/blog/interpreting-ctgan-progress/</a></span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="praxisbeispiele-in-der-verwaltung">
+<h2>Praxisbeispiele in der Verwaltung<a class="headerlink" href="#praxisbeispiele-in-der-verwaltung" title="Permalink to this heading">#</a></h2>
+<p>Einsatz von synthetischen Daten in der Praxis:</p>
+<ol class="arabic simple">
+<li><p>Dummy Daten können Struktur und Aufbau von Datensätzen veranschaulichen.</p></li>
+<li><p>Synthetische Daten können echte Datengrundlagen aufwerten.</p></li>
+<li><p>Synthetische Daten ermöglichen das Teilen von Datengrundlagen trotz Datenschutzvorgaben.</p></li>
+</ol>
+<section id="struktur-und-aufbau-von-datensatzen-veranschaulichen">
+<span id="section-label"></span><h3>Struktur und Aufbau von Datensätzen veranschaulichen<a class="headerlink" href="#struktur-und-aufbau-von-datensatzen-veranschaulichen" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Versuchsdaten für Softwaretesting</p></li>
+<li><p>Datenbeispiele zur Verprobung von Konzepten, Forschungsvorhaben und Produktvorstellungen auf Arbeitsebe</p></li>
+</ol>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Projekt</div>
+<figure class="boxed align-default">
+<a class="reference internal image-reference" href="_images/ADR-UK.png"><img alt="_images/ADR-UK.png" src="_images/ADR-UK.png" style="width: 100%;" /></a>
+</figure>
+<p class="sd-card-text">Administrative Data Research UK &amp; Economic and Social Research Council</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Ergebnis</div>
+<p class="sd-card-text">Kritische Betrachtung der Datenqualität, dem Datenschutz und dem Verständnis von Auswirkungen bei der Nutzung</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Vorschläge</div>
+<p class="sd-card-text">Nutzung von Dummy Daten und Ausweitung echter Datengrundlagen
+Produkt: <a class="reference external" href="https://colab.research.google.com/drive/1xax64hSDf15WE8v49vpqaRUKDvjppXMQ">Colab Notebook</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="echte-datengrundlagen-aufwerten">
+<span id="id1"></span><h3>Echte Datengrundlagen aufwerten<a class="headerlink" href="#echte-datengrundlagen-aufwerten" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Kleine Datensätze erweitern</p></li>
+<li><p>Unvollständige Daten ergänzen</p></li>
+<li><p>Bias in echten Datengrundlagen aufheben</p></li>
+</ol>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Projekt</div>
+<figure class="boxed align-default">
+<a class="reference internal image-reference" href="_images/SD_gretel_google.png"><img alt="_images/SD_gretel_google.png" src="_images/SD_gretel_google.png" style="width: 100%;" /></a>
+</figure>
+<p class="sd-card-text">Google Cloud Platform &amp; Gretel</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Ergebnis</div>
+<p class="sd-card-text">Integration der Generierung synthetischer Daten als Dienstleistung auf MLOps-Plattform von Google (Vertex AI)</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Ziel</div>
+<p class="sd-card-text">Verbesserung der Datengrundlage zum Training von ML-Modellen</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="schutzenswerte-datengrundlagen-teilen">
+<span id="id2"></span><h3>Schützenswerte Datengrundlagen teilen<a class="headerlink" href="#schutzenswerte-datengrundlagen-teilen" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Sensible Daten zur internen Verarbeitung teilen. (bspw. Software/Data Science Team)</p></li>
+<li><p>Sensible Daten zu Forschungszwecken bereitstellen.</p></li>
+</ol>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Projekt</div>
+<figure class="boxed align-default" id="id5">
+<a class="reference internal image-reference" href="_images/KI-FDZ.png"><img alt="_images/KI-FDZ.png" src="_images/KI-FDZ.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Künstliche Intelligenz am Forschungsdatenzentrum im BfArM zur Erforschung von Anonymisierungsmöglichkeiten und AI-readiness (KI-FDZ)</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Vorhaben</div>
+<blockquote class="epigraph">
+<div><p class="sd-card-text">…aus den echten Gesundheitsdaten künstliche Datensätze zu erzeugen, die jedoch die gleichen statistischen Eigenschaften wie die echten haben.</p>
+<p class="attribution">—KI-FDZ Projektbeschreibung</p>
+</div></blockquote>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -809,11 +977,11 @@ Spoiler<div class="sd-summary-down docutils">
       </div>
     </a>
     <a class="right-next"
-       href="besonderheiten.html"
+       href="qualit%C3%A4tsbewertung.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Besonderheiten</p>
+        <p class="prev-next-title">Qualitätsbewertung</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -836,6 +1004,17 @@ Spoiler<div class="sd-summary-down docutils">
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ein-datenbeispiel">Ein Datenbeispiel</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#besonderheiten">Besonderheiten</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#welche-arten-von-synthetischen-daten-gibt-es">Welche Arten von synthetischen Daten gibt es?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#was-macht-den-einsatz-von-synthetischen-daten-spannend">Was macht den Einsatz von synthetischen Daten spannend?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#praxisbeispiele-in-der-verwaltung">Praxisbeispiele in der Verwaltung</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#struktur-und-aufbau-von-datensatzen-veranschaulichen">Struktur und Aufbau von Datensätzen veranschaulichen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#echte-datengrundlagen-aufwerten">Echte Datengrundlagen aufwerten</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#schutzenswerte-datengrundlagen-teilen">Schützenswerte Datengrundlagen teilen</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
