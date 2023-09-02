@@ -10,5 +10,4 @@ chapters:
 - file: datenauswertung
 - file: diff_privacy
 - file: diff_privacy_sd
-- file: diff_privacy_sd_gan
 - file: acknowledgements
