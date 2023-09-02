@@ -35,6 +35,7 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/tufte.css" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -339,7 +340,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -355,6 +358,15 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mit-dem-buch-zurecht-kommen">Mit dem Buch zurecht kommen:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zu-mir">Zu mir:</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -366,32 +378,29 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="synthetische-daten-in-der-verwaltung">
 <h1>🧪 Synthetische Daten (in der Verwaltung 🗃️)<a class="headerlink" href="#synthetische-daten-in-der-verwaltung" title="Permalink to this heading">#</a></h1>
-<p>🛠️ Arbeiitsversion - Work in progress !</p>
-<p>Ein Wiki zu synthetischen Daten und Differential Privacy und deren potenziellen Nutzen in der Verwaltung.</p>
-<p>Dieses Wiki zielt auf eine praxisnahe und anwendungsorientierte Einführung in das Thema synthetische Daten ab. Es dient hoffentlich allen, die..:</p>
+<p>🛠️ Arbeitsversion - Work in progress !</p>
+<p>Ein Wiki zu synthetischen Daten und Differential Privacy und deren Anwendung in der Verwaltung.</p>
+<p>Schau rein, wenn du … :</p>
 <ul class="simple">
-<li><p>neugierig sind</p></li>
-<li><p>Praxisbeispiele und tatsächliche Anwendungen in der Verwaltung sehen wollen</p></li>
-<li><p>nicht ganz überzeugt sind, dass synthetische Daten sinnvoll sind</p></li>
-<li><p>skeptisch sind, dass statistische Eigenschaften nachbildbar sind</p></li>
-<li><p>Zweifel haben, dass synthetische Daten Datenschutz konform sind</p></li>
-<li><p>eine Anleitung zum Selbermachen suchen</p></li>
+<li><p>neugierig bist</p></li>
+<li><p>Praxisbeispiele und tatsächliche Anwendungen in der Verwaltung sehen möchtest</p></li>
+<li><p>nicht ganz überzeugt bist, dass synthetische Daten sinnvoll sind</p></li>
+<li><p>skeptisch bist, dass statistische Eigenschaften von Daten nachbildbar sind</p></li>
+<li><p>zweifelst, dass synthetische Daten Datenschutz konform sein können</p></li>
+<li><p>eine Anleitung für DIY Daten suchst</p></li>
 </ul>
+<section id="mit-dem-buch-zurecht-kommen">
+<h2>Mit dem Buch zurecht kommen:<a class="headerlink" href="#mit-dem-buch-zurecht-kommen" title="Permalink to this heading">#</a></h2>
+<p>Als Newbee: Das Buch versucht alle, unabhängig der Vorerfahrungen mitzunehmen. Code-Beispiele ergänzen den Inhalt und können als Illustration verstanden oder übersprungen werden.
+Als Code afine Person: Hoffentlich finden sich ein paar Copy-Paste-Cells, die deine eigenen Anwendungen bereichern.
+Als Pro: Wahrscheinlich wirst du eher Punktuell durch das Buch navigieren und eventuell ein oder zwei Tools oder Quick Links nutzen.</p>
+<p>Ungeachtet deiner Erfahrungsstufe freue ich mich über dein Feedback und Gedanken, wie das Buch verbessert werden kann. Schrieb mir gerne Kommentare oder direkte Nachrichten an <a class="reference external" href="mailto:ascherz&#46;pdkonto&#37;&#52;&#48;gmail&#46;com">ascherz<span>&#46;</span>pdkonto<span>&#64;</span>gmail<span>&#46;</span>com</a> .</p>
+</section>
+<section id="zu-mir">
+<h2>Zu mir:<a class="headerlink" href="#zu-mir" title="Permalink to this heading">#</a></h2>
+<p>Während meines Studium wurde mir die Möglichkeit geschenkt, für eine fortschritliche Verwaltung die Potenziale von synthetischen Daten zu testen. Neugierig und mit der Hoffnung eine gute Lösung für mehr Datenaustausch im öffentlichen Sektor zu finden, vertiefte ich mich in die Welt der synthetische Daten. Das Buch fasst den dadurch entstandenen kleinen Cosmos hoffentlich gewinnbringen für euch zusammen.</p>
+</section>
 <div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="einleitung.html">Synthetische Daten</a></li>
-<li class="toctree-l1"><a class="reference internal" href="besonderheiten.html">Besonderheiten</a></li>
-<li class="toctree-l1"><a class="reference internal" href="nutzen.html">Praxisbeispiele in der Verwaltung</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qualit%C3%A4tsbewertung.html">Qualitätsbewertung</a></li>
-<li class="toctree-l1"><a class="reference internal" href="datenschutz.html">Datenschutz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="datenauswertung.html">Datenauswertung</a></li>
-<li class="toctree-l1"><a class="reference internal" href="diff_privacy.html">Differential Privacy</a></li>
-<li class="toctree-l1"><a class="reference internal" href="diff_privacy_sd.html">Beispiel Differential Privacy</a></li>
-<li class="toctree-l1"><a class="reference internal" href="diff_privacy_sd.html#abfrage-mit-differential-privacy">Abfrage mit Differential Privacy</a></li>
-<li class="toctree-l1"><a class="reference internal" href="diff_privacy_sd.html#differential-privacy-und-synthetische-daten">Differential Privacy und synthetische Daten</a></li>
-<li class="toctree-l1"><a class="reference internal" href="diff_privacy_sd_gan.html">Synthetische Daten mit KI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acknowledgements.html">Acknowledgements</a></li>
-</ul>
 </div>
 </section>
 
@@ -444,6 +453,21 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mit-dem-buch-zurecht-kommen">Mit dem Buch zurecht kommen:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zu-mir">Zu mir:</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

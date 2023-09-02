@@ -1,19 +1,28 @@
 # 🧪 Synthetische Daten (in der Verwaltung 🗃️)
 
-🛠️ Arbeiitsversion - Work in progress !
+🛠️ Arbeitsversion - Work in progress !
 
-Ein Wiki zu synthetischen Daten und Differential Privacy und deren potenziellen Nutzen in der Verwaltung.
+Ein Wiki zu synthetischen Daten und Differential Privacy und deren Anwendung in der Verwaltung.
 
-Dieses Wiki zielt auf eine praxisnahe und anwendungsorientierte Einführung in das Thema synthetische Daten ab. Es dient hoffentlich allen, die..:
+Schau rein, wenn du ... :
 
-- neugierig sind
-- Praxisbeispiele und tatsächliche Anwendungen in der Verwaltung sehen wollen
-- nicht ganz überzeugt sind, dass synthetische Daten sinnvoll sind
-- skeptisch sind, dass statistische Eigenschaften nachbildbar sind
-- Zweifel haben, dass synthetische Daten Datenschutz konform sind
-- eine Anleitung zum Selbermachen suchen
+- neugierig bist
+- Praxisbeispiele und tatsächliche Anwendungen in der Verwaltung sehen möchtest
+- nicht ganz überzeugt bist, dass synthetische Daten sinnvoll sind
+- skeptisch bist, dass statistische Eigenschaften von Daten nachbildbar sind
+- zweifelst, dass synthetische Daten Datenschutz konform sein können
+- eine Anleitung für DIY Daten suchst
+
+## Mit dem Buch zurecht kommen:
+
+Als Newbee: Das Buch versucht alle, unabhängig der Vorerfahrungen mitzunehmen. Code-Beispiele ergänzen den Inhalt und können als Illustration verstanden oder übersprungen werden.
+Als Code afine Person: Hoffentlich finden sich ein paar Copy-Paste-Cells, die deine eigenen Anwendungen bereichern.
+Als Pro: Wahrscheinlich wirst du eher Punktuell durch das Buch navigieren und eventuell ein oder zwei Tools oder Quick Links nutzen. 
+
+Ungeachtet deiner Erfahrungsstufe freue ich mich über dein Feedback und Gedanken, wie das Buch verbessert werden kann. Schrieb mir gerne Kommentare oder direkte Nachrichten an ascherz.pdkonto@gmail.com .
+
+## Zu mir:
+
+Während meines Studium wurde mir die Möglichkeit geschenkt, für eine fortschritliche Verwaltung die Potenziale von synthetischen Daten zu testen. Neugierig und mit der Hoffnung eine gute Lösung für mehr Datenaustausch im öffentlichen Sektor zu finden, vertiefte ich mich in die Welt der synthetische Daten. Das Buch fasst den dadurch entstandenen kleinen Cosmos hoffentlich gewinnbringen für euch zusammen.  
 
 
-
-```{tableofcontents}
-```
