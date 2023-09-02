@@ -160,6 +160,7 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Synthetische Daten</a></li>
+
 <li class="toctree-l1"><a class="reference internal" href="qualit%C3%A4tsbewertung.html">Qualitätsbewertung</a></li>
 <li class="toctree-l1"><a class="reference internal" href="datenschutz.html">Datenschutz</a></li>
 <li class="toctree-l1"><a class="reference internal" href="datenauswertung.html">Datenauswertung</a></li>
@@ -167,7 +168,6 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="diff_privacy_sd.html">Beispiel Differential Privacy</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="diff_privacy_sd_gan.html">Synthetische Daten mit KI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="acknowledgements.html">Acknowledgements</a></li>
 </ul>
 
@@ -362,6 +362,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Synthetische Daten</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ein-datenbeispiel">Ein Datenbeispiel</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#besonderheiten">Besonderheiten</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#welche-arten-von-synthetischen-daten-gibt-es">Welche Arten von synthetischen Daten gibt es?</a></li>
@@ -375,6 +376,10 @@ document.write(`
 </ul>
 </li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#synthetische-daten-mit-ml">Synthetische Daten mit ML</a></li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -935,6 +940,88 @@ Vorhaben</div>
 </section>
 </section>
 </section>
+<section class="tex2jax_ignore mathjax_ignore" id="synthetische-daten-mit-ml">
+<h1>Synthetische Daten mit ML<a class="headerlink" href="#synthetische-daten-mit-ml" title="Permalink to this heading">#</a></h1>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Sind synthetische Daten ohne Gefahren teilbar? Nach aktueller DSGVO eigentlich ja, …<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">aber es besteht das Risiko, durch Fehler im Generierungsprozess, gegen die DSGVO zu verstoßen.</p>
+</div>
+</details><p>Dadurch ergibt sich ein Bedarf an Regulierung und einheitlichen Standards für die Nutzung von synthetischen Daten.</p>
+<div class="admonition-bestehende-regulierungen admonition">
+<p class="admonition-title">Bestehende Regulierungen  </p>
+<p>Arbeitsgruppe der Synthetic Data Industry Connections der IEEE Association erarbeitet Vorschlägen zu Privatsphärestandards und Qualitätsstandards bei KI-generierten synthetischen Daten.</p>
+<figure class="boxed align-default">
+<a class="reference internal image-reference" href="_images/iee_sa.png"><img alt="_images/iee_sa.png" src="_images/iee_sa.png" style="width: 50%;" /></a>
+</figure>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Risikofrei? Nein, …<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">aber wir können Differential Privacy in den Generierungsprozess integrieren,
+der die eingehaltene Privatsphäre im synthetischen Datensatz kontrolliert.</p>
+</div>
+</details><div class="admonition-forschungsergebnisse admonition">
+<p class="admonition-title">Forschungsergebnisse</p>
+<p>Challenge der National Institute of Standards and Technology mit DP-Algorithmen zur Generierung synthetischer Daten. (GAN-Version belegte Platz 5.)</p>
+<figure class="boxed align-default">
+<a class="reference internal image-reference" href="_images/NIST_challenge.png"><img alt="_images/NIST_challenge.png" src="_images/NIST_challenge.png" style="width: 100%;" /></a>
+</figure>
+</div>
+<div class="admonition-platz-1 admonition">
+<p class="admonition-title">Platz 1  </p>
+<figure class="boxed align-default">
+<a class="reference internal image-reference" href="_images/nist1.png"><img alt="_images/nist1.png" src="_images/nist1.png" style="width: 100%;" /></a>
+</figure>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Platz 2<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<figure class="boxed align-default">
+<a class="reference internal image-reference" href="_images/nist2.png"><img alt="_images/nist2.png" src="_images/nist2.png" style="width: 100%;" /></a>
+</figure>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Platz 3<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<figure class="boxed align-default">
+<a class="reference internal image-reference" href="_images/nist3.png"><img alt="_images/nist3.png" src="_images/nist3.png" style="width: 100%;" /></a>
+</figure>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Platz 4<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<figure class="boxed align-default">
+<a class="reference internal image-reference" href="_images/nist4.png"><img alt="_images/nist4.png" src="_images/nist4.png" style="width: 100%;" /></a>
+</figure>
+</div>
+</details><div class="admonition-platz-5 admonition">
+<p class="admonition-title">Platz 5  </p>
+<figure class="boxed align-default">
+<a class="reference internal image-reference" href="_images/nist5.png"><img alt="_images/nist5.png" src="_images/nist5.png" style="width: 100%;" /></a>
+</figure>
+</div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1003,6 +1090,7 @@ Vorhaben</div>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Synthetische Daten</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ein-datenbeispiel">Ein Datenbeispiel</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#besonderheiten">Besonderheiten</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#welche-arten-von-synthetischen-daten-gibt-es">Welche Arten von synthetischen Daten gibt es?</a></li>
@@ -1016,6 +1104,10 @@ Vorhaben</div>
 </ul>
 </li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#synthetische-daten-mit-ml">Synthetische Daten mit ML</a></li>
+</ul>
+
   </nav></div>
 
 </div></div>
