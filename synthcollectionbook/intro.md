@@ -4,22 +4,22 @@
 
 Ein Wiki zu synthetischen Daten und Differential Privacy und deren Anwendung in der Verwaltung.
 
-Schau rein, wenn du ... :
+Für alle die:
 
-- neugierig bist.
-- Praxisbeispiele und tatsächliche Anwendungen in der Verwaltung sehen möchtest.
-- nicht ganz überzeugt bist, dass synthetische Daten sinnvoll sind.
-- skeptisch bist, dass statistische Eigenschaften von Daten nachbildbar sind.
-- zweifelst, dass synthetische Daten datenschutzkonform sein können.
-- eine Anleitung für DIY-Daten suchst.
+- neugierig sind.
+- Praxisbeispiele und tatsächliche Anwendungen in der Verwaltung sehen möchten.
+- nicht ganz überzeugt sind, dass synthetische Daten sinnvoll sind.
+- skeptisch sind, dass statistische Eigenschaften von Daten nachbildbar sind.
+- zweifeln, dass synthetische Daten datenschutzkonform sein können.
+- eine Anleitung für DIY-Daten suchen.
 
 ## Mit dem Buch zurecht kommen:
 
-Als Newbee: Das Buch versucht alle, unabhängig der Vorerfahrungen, mitzunehmen. Code-Beispiele ergänzen den Inhalt und können als Illustration verstanden oder übersprungen werden.
+Als Newbee: Das Buch versucht Alle, unabhängig der Vorerfahrungen, mitzunehmen. Code-Beispiele ergänzen den Inhalt und können als Illustration verstanden oder übersprungen werden.
 Als Code afine Person: Hoffentlich finden sich ein paar Copy-Paste-Beispiele, die deine eigenen Anwendungen bereichern.
-Als Pro: Wahrscheinlich wirst du eher Punktuell durch das Buch navigieren und eventuell ein oder zwei Tools oder Quick Links nutzen. 
+Als Pro: Wahrscheinlich wirst du eher Punktuell durch das Buch navigieren und einige Tools oder Quick Links nutzen. 
 
-Ungeachtet deiner Erfahrungsstufe freue ich mich über dein Feedback und deine Gedanken, wie das Buch verbessert werden kann. Schreib mir gerne Kommentare oder direkte Nachrichten an ascherz.pdkonto@gmail.com.
+Ungeachtet deiner Erfahrungsstufe freue ich mich über dein Feedback und deine Gedanken, wie das Buch verbessert werden kann. Schreib mir gerne Kommentare oder direkte Nachrichten an scherz.antonia@gmail.com.
 
 ## Zu mir:
 
