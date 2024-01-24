@@ -24,7 +24,7 @@ Die deutsche Verwaltung bietet eine typische Entwicklungsumgebungen mit datensch
 
 **Als Pro:** Wahrscheinlich wirst du eher Punktuell durch das Buch navigieren und eventuell ein oder zwei Tools oder Quick Links nutzen. 
 
-Ungeachtet deiner Erfahrungsstufe freue ich mich über dein Feedback und deine Gedanken, wie das Buch verbessert werden kann. Schreib mir gerne Kommentare oder direkte Nachrichten an ascherz.pdkonto@gmail.com.
+Ungeachtet deiner Erfahrungsstufe freue ich mich über dein Feedback und deine Gedanken, wie das Buch verbessert werden kann. Schreib mir gerne Kommentare oder direkte Nachrichten an scherz.antonia@gmail.com.
 
 ## Zu mir
 
