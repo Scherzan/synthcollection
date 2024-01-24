@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>🧪 Synthetische Daten (in der Verwaltung 🗃️) &#8212; A Collection of Ressources on Synthetic Data</title>
+    <title>Besonderheiten &#8212; A Collection of Ressources on Synthetic Data</title>
   
   
   
@@ -35,7 +35,6 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/tufte.css" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -63,10 +62,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'besonderheiten';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Synthetische Daten" href="einleitung.html" />
+    <link rel="next" title="Praxisbeispiele in der Verwaltung" href="nutzen.html" />
+    <link rel="prev" title="Synthetische Daten" href="einleitung.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -132,7 +132,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -151,15 +151,16 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     🧪 Synthetische Daten (in der Verwaltung 🗃️)
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="einleitung.html">Synthetische Daten</a></li>
-
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Besonderheiten</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nutzen.html">Praxisbeispiele in der Verwaltung</a></li>
 <li class="toctree-l1"><a class="reference internal" href="qualit%C3%A4tsbewertung.html">Qualitätsbewertung</a></li>
 <li class="toctree-l1"><a class="reference internal" href="datenschutz.html">Datenschutz</a></li>
 <li class="toctree-l1"><a class="reference internal" href="datenauswertung.html">Datenauswertung</a></li>
@@ -167,6 +168,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="diff_privacy_sd.html">Beispiel Differential Privacy</a></li>
 
 
+<li class="toctree-l1"><a class="reference internal" href="diff_privacy_sd_gan.html">Synthetische Daten mit KI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="acknowledgements.html">Acknowledgements</a></li>
 </ul>
 
@@ -239,7 +241,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fbesonderheiten.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -269,7 +271,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/besonderheiten.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -279,7 +281,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.md</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
 </li>
       
@@ -351,7 +353,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>🧪 Synthetische Daten (in der Verwaltung 🗃️)</h1>
+    <h1>Besonderheiten</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -361,8 +363,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mit-dem-buch-zurecht-kommen">Mit dem Buch zurecht kommen</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zu-mir">Zu mir</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#welche-arten-von-synthetischen-daten-gibt-es">Welche Arten von synthetischen Daten gibt es?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#was-macht-den-einsatz-von-synthetischen-daten-spannend">Was macht den Einsatz von synthetischen Daten spannend?</a></li>
 </ul>
             </nav>
         </div>
@@ -374,32 +376,34 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="synthetische-daten-in-der-verwaltung">
-<h1>🧪 Synthetische Daten (in der Verwaltung 🗃️)<a class="headerlink" href="#synthetische-daten-in-der-verwaltung" title="Permalink to this heading">#</a></h1>
-<p>🛠️ Arbeitsversion - Work in progress !</p>
-<p>Dieses Wiki zu synthetischen Daten und Differential Privacy richtet sich an Data Product Engineers und Analysten, die unter strengen Datenschutzvorgaben datengetriebene Produkte entwickeln wollen. Das Wiki erklärt strukturiert wie synthetische Daten lösungsorientiert eingesetzt werden können und vermittelt einen verantwortungsvollen Umgang mit Qualität und Datenschutz. Wer Vorerfahrung mitbringt und einfach nach einer Toolbox zur Generierung von synthetischen Daten sucht, findet im zweiten Abschnitt einige Anleitungen.</p>
-<p>Die deutsche Verwaltung bietet eine typische Entwicklungsumgebungen mit datenschutzrechtlich schwierigen Organisationsstrukturen. Die Gegebenheiten und Hürden dieses Umfeldes dienen als Praxisbeispiele und Illustration in diesem Buch. Darüber hinaus richtet sich das Buch an alle, die …</p>
-<ul class="simple">
-<li><p>neugierig sind.</p></li>
-<li><p>Praxisbeispiele und tatsächliche Anwendungen von synthetische Daten sehen möchten.</p></li>
-<li><p>nicht ganz überzeugt sind, dass synthetische Daten sinnvoll sind.</p></li>
-<li><p>skeptisch sind, dass statistische Eigenschaften von Daten nachbildbar sind.</p></li>
-<li><p>zweifeln, dass synthetische Daten datenschutzkonform sein können.</p></li>
-<li><p>eine Anleitung für DIY-Daten suchen.</p></li>
-</ul>
-<section id="mit-dem-buch-zurecht-kommen">
-<h2>Mit dem Buch zurecht kommen<a class="headerlink" href="#mit-dem-buch-zurecht-kommen" title="Permalink to this heading">#</a></h2>
-<p><strong>Als Newbee:</strong> Das Buch versucht alle, unabhängig der Vorerfahrungen, mitzunehmen. Code-Beispiele ergänzen den Inhalt und können als Illustration verstanden oder übersprungen werden.</p>
-<p><strong>Als Code afine Person:</strong> Hoffentlich finden sich ein paar Copy-Paste-Beispiele, die deine eigenen Anwendungen bereichern.</p>
-<p><strong>Als Pro:</strong> Wahrscheinlich wirst du eher Punktuell durch das Buch navigieren und eventuell ein oder zwei Tools oder Quick Links nutzen.</p>
-<p>Ungeachtet deiner Erfahrungsstufe freue ich mich über dein Feedback und deine Gedanken, wie das Buch verbessert werden kann. Schreib mir gerne Kommentare oder direkte Nachrichten an <a class="reference external" href="mailto:scherz&#46;antonia&#37;&#52;&#48;gmail&#46;com">scherz<span>&#46;</span>antonia<span>&#64;</span>gmail<span>&#46;</span>com</a>.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="besonderheiten">
+<h1>Besonderheiten<a class="headerlink" href="#besonderheiten" title="Permalink to this heading">#</a></h1>
+<section id="welche-arten-von-synthetischen-daten-gibt-es">
+<h2>Welche Arten von synthetischen Daten gibt es?<a class="headerlink" href="#welche-arten-von-synthetischen-daten-gibt-es" title="Permalink to this heading">#</a></h2>
+<figure class="boxed align-default" id="id1">
+<a class="reference internal image-reference" href="_images/Arten_SD.png"><img alt="_images/Arten_SD.png" src="_images/Arten_SD.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Synthetische Daten unterscheiden sich nach dem Grad der Wiedergabetreue.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
-<section id="zu-mir">
-<h2>Zu mir<a class="headerlink" href="#zu-mir" title="Permalink to this heading">#</a></h2>
-<p>Während meines Studium wurde mir die Möglichkeit geschenkt, für eine fortschritliche Verwaltung die Potenziale von synthetischen Daten zu erschließen. Neugierig und mit der Hoffnung eine gute Lösung für mehr Datenaustausch im öffentlichen Sektor zu finden, vertiefte ich mich in die Welt der synthetischen Daten. Das Buch fasst den entstandenen, kleinen Cosmos, hoffentlich gewinnbringen, für euch zusammen.</p>
+<section id="was-macht-den-einsatz-von-synthetischen-daten-spannend">
+<h2>Was macht den Einsatz von synthetischen Daten spannend?<a class="headerlink" href="#was-macht-den-einsatz-von-synthetischen-daten-spannend" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Synthetische Daten sehen aus und fühlen sich an wie echte Daten.</p></li>
+</ol>
+<figure class="boxed align-default">
+<a class="reference internal image-reference" href="_images/bilder_anon.png"><img alt="_images/bilder_anon.png" src="_images/bilder_anon.png" style="width: 100%;" /></a>
+</figure>
+<p><br/><br/>
+2. Synthetische Daten enthalten keine personenbezogenen Informationen, da sie aus zufälligen Zahlen generiert werden.</p>
+<figure class="boxed align-default" id="id2">
+<a class="reference internal image-reference" href="_images/ctgan_architecure.png"><img alt="_images/ctgan_architecure.png" src="_images/ctgan_architecure.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Beispiel für die Architektur eines Neuronalen Netzes zur Generierung von synthetischen Daten aus Zufallszahlen. Quelle: <a class="reference external" href="https://datacebo.com/blog/interpreting-ctgan-progress/">https://datacebo.com/blog/interpreting-ctgan-progress/</a></span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
-<div class="toctree-wrapper compound">
-</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -433,12 +437,21 @@ document.write(`
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
-    <a class="right-next"
+    <a class="left-prev"
        href="einleitung.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Synthetische Daten</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="nutzen.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Synthetische Daten</p>
+        <p class="prev-next-title">Praxisbeispiele in der Verwaltung</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -460,8 +473,8 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mit-dem-buch-zurecht-kommen">Mit dem Buch zurecht kommen</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zu-mir">Zu mir</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#welche-arten-von-synthetischen-daten-gibt-es">Welche Arten von synthetischen Daten gibt es?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#was-macht-den-einsatz-von-synthetischen-daten-spannend">Was macht den Einsatz von synthetischen Daten spannend?</a></li>
 </ul>
   </nav></div>
 
